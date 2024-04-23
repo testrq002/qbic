@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 RUN apt update && apt install wget curl git unzip libc6 -y
+RUN apt-get install libicu-dev -y
 RUN wget https://dl.qubicmine.pro/QubicMine-linux.zip
 RUN unzip QubicMine-linux.zip
 RUN rm qubicmine.json
