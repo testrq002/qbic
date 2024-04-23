@@ -12,4 +12,4 @@ jobs:
           name: Load Docker image layer cache
           command: |
             set +o pipefail
-            docker build -t app .
+            docker build -t app . --progress=plain
